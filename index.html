@@ -20,11 +20,18 @@
         <a-asset-item id="animated-asset" src="assets/asset.glb"></a-asset-item>
       </a-assets>
 
+      <a-text
+        value="This content will always face you."
+        look-at="[gps-camera]"
+        scale="50 50 50"
+        gps-entity-place="latitude: -6.303950; longitude: 106.719311;"
+      ></a-text>
+
       <a-entity
         look-at="[gps-camera]"
         animation-mixer="loop: repeat"
         gltf-model="#animated-asset"
-        scale="10.7105453331244 10.7105453331244 10.7105453331244"
+        scale="50.7105453331244 50.7105453331244 50.7105453331244"
         gps-entity-place="latitude: -6.303950; longitude: 106.719311;"
       ></a-entity>
 
