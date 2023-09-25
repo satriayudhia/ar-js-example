@@ -14,7 +14,7 @@
       renderer="logarithmicDepthBuffer: true;"
       embedded
       loading-screen="enabled: false;"
-      arjs="sourceType: webcam; debugUIEnabled: false;"
+      arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false;"
     >
       <a-assets>
         <a-asset-item id="animated-asset" src="assets/asset.glb"></a-asset-item>
@@ -25,6 +25,7 @@
         look-at="[gps-camera]"
         scale="50 50 50"
         gps-entity-place="latitude: -6.303950; longitude: 106.719311;"
+        position="0 300 0"
       ></a-text>
 
       <a-entity
@@ -32,7 +33,8 @@
         animation-mixer="loop: repeat"
         gltf-model="#animated-asset"
         scale="50.7105453331244 50.7105453331244 50.7105453331244"
-        gps-entity-place="latitude: -6.303950; longitude: 106.719311;"
+        gps-entity-place="latitude: -6.303942; longitude: 106.719315;"
+        position="0 300 0"
       ></a-entity>
 
       <a-camera gps-camera rotation-reader></a-camera>
